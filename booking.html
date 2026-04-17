@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Your Trip | Voyage Nexus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      color: white;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 30px;
+      border-bottom: 2px solid #00ffd0;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #00ffd0;
+      font-size: 2.5em;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    h2 {
+      text-align: center;
+      color: #00ffd0;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    input, select {
+      background-color: #e9e9e9;
+      color: #333;
+    }
+
+    button {
+      background-color: #00ffd0;
+      color: #000;
+      font-weight: bold;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #00c4a7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Voyage Nexus</h1>
+</header>
+
+<div class="container">
+  <h2>Book Your Adventure</h2>
+  <form id="bookingForm" action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
+    <input type="hidden" name="_subject" value="New Booking from Voyage Nexus!">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="persons">Number of Persons</label>
+    <input type="number" id="persons" name="persons" min="1" required>
+
+    <label for="age">Age Range</label>
+    <select id="age" name="age" required>
+      <option value="" disabled selected>Select age range</option>
+      <option value="under-18">Under 18</option>
+      <option value="18-30">18–30</option>
+      <option value="31-50">31–50</option>
+      <option value="51-plus">51+</option>
+    </select>
+
+    <label for="payment">Payment Method</label>
+    <select id="payment" name="payment" required>
+      <option value="" disabled selected>Select payment method</option>
+      <option value="credit-card">Credit Card</option>
+      <option value="debit-card">Debit Card</option>
+      <option value="paypal">PayPal</option>
+      <option value="upi">UPI</option>
+    </select>
+
+    <button type="submit">Confirm Booking</button>
+  </form>
+</div>
+
+<footer>
+  &copy; 2025 Voyage Nexus | All Rights Reserved
+</footer>
+
+<script>
+  document.getElementById('bookingForm').addEventListener('submit', function(event) {
+    alert('✅ Your booking is confirmed! Our agent will call you shortly.');
+  });
+</script>
+
+</body>
+</html>

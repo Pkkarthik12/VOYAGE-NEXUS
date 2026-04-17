@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sydney | Voyage Nexus</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #ffffff);
+      color: #002c3e;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      padding: 20px 40px;
+      background-color: #ffffffaa;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0077b6;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #023e8a;
+    }
+
+    .hero {
+      height: 100vh;
+      background: url('sydney.jpeg');
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 119, 182, 0.4);
+    }
+
+    .hero-content {
+      position: relative;
+      color: #fff;
+      z-index: 2;
+      max-width: 700px;
+      padding: 40px;
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(8px);
+      border-radius: 20px;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(60px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2.8rem;
+      color: #0077b6;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      color: #023047;
+      line-height: 1.8;
+    }
+
+    .book-button {
+      margin-top: 30px;
+      padding: 14px 30px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #00b4d8, #90e0ef);
+      color: #002c3e;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .book-button:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Explore Sydney</h1>
+      <p>Bask in the beauty of Australia's iconic beaches, harbor views, and vibrant culture. A perfect blend of relaxation and adventure.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Why Sydney?</h2>
+    <p>
+      Visit the world-famous Sydney Opera House and Harbour Bridge, soak up the sun on Bondi Beach, and enjoy laid-back Aussie charm with cosmopolitan vibes. Sydney is a paradise for explorers, surfers, and sunset lovers alike.
+    </p>
+    <button class="book-button">Book Now</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Voyage Nexus | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
+                                                                                                         nnnn     

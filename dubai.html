@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dubai | Voyage Nexus</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Raleway', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #f2c94c;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .hero {
+      background: url('dubai.jpeg');
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      text-align: center;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 50px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+      max-width: 700px;
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+      color: #f2c94c;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .section {
+      padding: 60px 30px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2.5rem;
+      color: #f2c94c;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #ddd;
+    }
+
+    .book-button {
+      margin-top: 30px;
+      padding: 14px 28px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 50px;
+      background: linear-gradient(to right, #f2c94c, #f2994a);
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .book-button:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #aaa;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Dubai Awaits</h1>
+      <p>Where golden sands meet futuristic skylines. Discover opulence, thrill, and timeless beauty in one breathtaking city.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Why Visit Dubai?</h2>
+    <p>
+      Soar to the heights of the Burj Khalifa, shop at luxury designer outlets, dine on gourmet cuisine, and experience the magic of the desert on a sunset safari. Dubai blends tradition and luxury in a way no other city does.
+    </p>
+    <button class="book-button">Book Your Dream Trip</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Voyage Nexus | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
